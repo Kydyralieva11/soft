@@ -1,0 +1,61 @@
+@import './fonts';
+@import './var';
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: inherit;
+    background: none;
+    outline: none;
+    list-style: none;
+    font-size: inherit;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    font-family: 'Mont', sans-serif;
+}
+
+.container{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.bg-banner{
+    background: url('../img/banner.png') no-repeat;
+    background-size: cover;
+    min-height: 655px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    .bg-banner{
+        background: none;
+    }
+}
+
+@import './layout/header';
+@import './include/banner';
+@import './include/about-us';
+@import './include/advertising';
+@import './include/mistakes';
+@import './include/work';
+@import './include/clean';
+@import './include/price';
+@import './include/book';
+@import './include/examples';
+@import './include/photo';
+@import './include/cleaner';
+@import './include/discounts';
+@import './include/certificate';
+@import './include/faq';
+@import './layout/footer';
