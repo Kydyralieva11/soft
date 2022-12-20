@@ -1,0 +1,31 @@
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+    .footer-nav{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        a{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 140%;
+            color: var(--color-gray-700);
+        }
+        .social-network{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .footer{
+        flex-direction: column;
+        gap: 30px;
+        .footer-nav{
+            flex-direction: column;
+        }
+    }
+}
