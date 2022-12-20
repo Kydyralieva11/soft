@@ -1,0 +1,115 @@
+.banner{
+  .banner-content-block{
+    max-width: 565px;
+    margin-top: 85px;
+    .banner-content{
+      display: flex;
+      font-weight: normal;
+      &__item{
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 150%;
+        color: var(--color-gray-700)
+      }
+      &__subtitle{
+        font-weight: normal;
+      }
+      .banner-desc{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--color-gray-700);
+      }
+      .banner-line{
+        display: inline-block;
+        width: 40px;
+        height: 2px;
+        background: var(--color-blue-200);
+        transform: translateY(-5px);
+        margin: 0 20px;
+      }
+    }
+    .banner-item-desc{
+      margin-top: 36px;
+      margin-bottom: 50px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 160%;
+      color: var(--color-gray-700);
+    }
+    .banner-btns{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      button{
+        padding: 30px 50px;
+        background: var(--color-blue-200);
+        box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+        border-radius: 100px;
+        color: #fff;
+        transition: .6s all;
+        width: 300px;
+      }
+      button:hover{
+        transform: scale(0.9);
+        background:#247fc9;
+      }
+      a:nth-child(2){
+        background: var(--color-yellow-400);
+        width: 300px;
+      }
+      a{
+        padding: 30px 50px;
+        background: var(--color-blue-200);
+        box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+        border-radius: 100px;
+        color: #fff;
+        transition: .6s all;
+        width: 300px;
+      }
+      a:hover{
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .banner-content-block{
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    .banner-content-block{
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner-content{
+    &__item{
+      font-size: 0.3125rem;
+    }
+    &__subtitle{
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .banner-btns{
+    flex-direction: column;
+    button{
+      width: 100%;
+    }
+  }
+}
