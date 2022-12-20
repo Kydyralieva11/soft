@@ -1,0 +1,85 @@
+.about-us{
+    margin-top: 72px;
+    .about-us-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(247px, 1fr));
+        gap: 10px;
+        .about-us-card{
+            background: var(--color-blue-200);
+            border-radius: 30px;
+            width: 100%;
+            padding: 45px 25px;
+            position: relative;
+            overflow: hidden;
+            &:nth-child(2n){
+                background: var(--color-yellow-400);
+            }
+            h2{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 140%;
+                color: var(--color-white-100);
+                max-width: 127px;
+            }
+            img{
+                content: '';
+                position: absolute;
+                top: -21px;
+                right: -94px;
+            }
+            .about-img{
+                position: absolute;
+                top: 6px;
+                right: -57px;
+            }
+            .about-us-logo{
+                position: absolute;
+                mix-blend-mode: color-burn;
+                top: 50px;
+                right: 2px;
+            }
+            .about-us-gloves{
+                position: absolute;
+                top: -11px;
+                right: -93px;
+            }
+            .about-us-check{
+                position: absolute;
+                top: 23px;
+                right: -49px;
+            }
+        }
+    }
+    .test{
+        background: var(--color-white-100);
+        box-shadow: 0px 0px 20px rgba(29, 31, 33, 0.12);
+        border-radius: 100px;
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 960px) {
+            flex-direction: column;
+            border-radius: 20px;
+        }
+        button{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            color: var(--color-gray-700);
+            transition: .6s all;
+            padding: 28px 37px;
+            background: transparent;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+        .tabs-btn.active{
+            background: var(--color-blue-200);
+            color: var(--color-white-100);
+        }
+        button:hover{
+            background: var(--color-blue-200);
+            color: var(--color-white-100);
+        }
+    }
+}
