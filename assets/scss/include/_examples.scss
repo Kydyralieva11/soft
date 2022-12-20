@@ -1,0 +1,116 @@
+.examples{
+    background: var(--color-blue-100);
+    padding: 3.125rem;
+    margin-top: 3.125rem;
+    .examples-content{
+        h2{
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 150%;
+            text-align: center;
+            color: var(--color-gray-700);
+            margin-top: 47px;
+        }
+        p{
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 150%;
+            text-align: center;
+            color: var(--color-gray-500);
+            margin-top: 10px;
+        }
+    }
+    .test{
+        background: var(--color-white-100);
+        box-shadow: 0px 0px 20px rgba(29, 31, 33, 0.12);
+        border-radius: 100px;
+        margin-top: 3.125rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // gap: 80px;
+        // max-width: 810px;
+        @media screen and (max-width: 960px) {
+            flex-direction: column;
+            border-radius: 20px;
+        }
+        button{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            text-align: right;
+            color: var(--color-gray-700);
+            transition: .6s all;
+            padding: 28px 37px;
+            background: transparent;
+            border-radius: 100px;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+        .tabs-btn.active{
+            background: var(--color-yellow-400);
+            color: var(--color-white-100);
+        }
+        button:hover{
+            background: var(--color-yellow-400);
+            color: var(--color-white-100);
+        }
+    }
+}
+
+.slides-block{
+    max-width: 64rem;
+    margin-top: 3.125rem;
+}
+
+.slides-block img{
+    width: 100%;
+}
+
+
+.tab-container {
+  width: 100%;
+  margin-top: 3.125rem;
+}
+
+.tabs {
+  display: flex;
+  overflow: scroll;
+}
+.tabs button {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #fc7904;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #fc7904;
+  color: #fff;
+  opacity: 0.9;
+}
+.tabs button:hover {
+  opacity: 1;
+}
+.tabs .non-active {
+  opacity: 0.6;
+}
+
+.tab-content {
+  padding: 10px 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: #fc7904;
+  text-decoration: none;
+}
+
+.author {
+  position: absolute;
+  left: 35px;
+  top: 35px;
+  color: #fff;
+}
