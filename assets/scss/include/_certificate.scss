@@ -1,0 +1,101 @@
+.certificate{
+    h2{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--color-gray-700);
+        margin-top: 60px;
+    }
+    p{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--color-gray-500);
+        margin-top: 10px;
+    }
+
+    .certificate-slide{
+        margin-top: 36px;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+      margin: 20px auto;
+    }
+
+    .serf{
+        max-width: 270px;
+        min-height: 380px;
+    }
+    
+    .serf img{
+        width: 100%;
+    }
+}
+
+.swiper-button-prev{
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: var(--color-blue-200);
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-size: 16px;
+}
+
+.swiper-button-next{
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: var(--color-blue-200);
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-next:after{
+    font-size: 16px;
+}
