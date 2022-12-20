@@ -1,0 +1,112 @@
+.photo{
+    background: url(../img/Фон.png) no-repeat;
+    padding: 138px;
+    background-size: cover;
+    min-height: 820px;
+    position: relative;
+    .photo-content{
+        text-align: left;
+        h2{
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 150%;
+            color: var(--color-gray-700);
+            max-width: 510px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 150%;
+            color: var(--color-gray-500);
+            max-width: 475px;
+        }
+        .photo-card{
+            background: var(--color-white-100);
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            max-width: 352px;
+            padding: 30px;
+            margin-top: 42px;
+            h2{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 150%;
+                color: var(--color-gray-700);
+                max-width: 290px;
+                margin-bottom: 20px;
+            }
+            .photo-card-img{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .photo-telegram{
+                    background: var(--color-blue-200);
+                    border-radius: 20px;
+                    width: 125px;
+                    height: 70px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .photo-whatsapp{
+                    background: var(--color-green-600);
+                    border-radius: 20px;
+                    width: 125px;
+                    height: 70px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .photo-laeyer{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 20px;
+                p{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: var(--color-gray-500);
+                }
+            }
+        }
+    }
+    .photo-img-hand{
+        position: absolute;
+        right: 50px;
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .photo-img-hand{
+        display: none;
+    }
+    .photo{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        min-height: 200px;
+        .photo-content{
+            text-align: center;
+            .photo-card{
+                margin: 0;
+                max-width: 100%;
+                margin-top: 50px;
+                h2{
+                    max-width: 100%;
+                }
+                .photo-telegram{
+                    width: 100% !important;
+                }
+                .photo-whatsapp{
+                    width: 100% !important;
+                }
+            }
+        }
+        
+    }
+}
