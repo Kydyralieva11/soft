@@ -1,0 +1,138 @@
+.clean{
+    h2{
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--color-gray-700);
+        margin-top: 140px;
+        span{
+            color: var(--color-blue-200);
+        }
+    }
+    p{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--color-gray-500);
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .clean-cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(317px, 1fr));
+        gap: 20px;
+        .clean-card-first{
+            background: var(--color-white-100);
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            padding: 29px 60px;
+            text-align: center;
+            transition: all;
+            img{
+                margin-bottom: 30px;
+            }
+            .card-info-items{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                .clean-title{
+                    font-weight: 800;
+                    font-size: 14px;
+                    line-height: 140%;
+                    color: var(--color-gray-700);
+                    margin: 0 auto;
+                }
+                h2{
+                    font-weight: 800;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: var(--color-gray-700);
+                    margin: 0 auto;
+                }
+                p{
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 150%;
+                    color: var(--color-gray-700);
+                    max-width: 241px;
+                    margin-bottom: 16px;
+                }
+            }
+            .card-info{
+                h2{
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 150%;
+                    color: var(--color-blue-200);
+                    margin: 0 auto;
+                    span{
+                        color: var(--color-gray-500);
+                    }
+                }
+                .card-btns{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-top: 10px;
+                    .card-btn{
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 100%;
+                        text-align: right;
+                        color: var(--color-blue-200);
+                        border: 1px solid var(--color-blue-200);
+                        border-radius: 100px;
+                        padding: 18px 66px;
+                        transition: .6s all;
+                    }
+                    .card-btn:hover{
+                        background: var(--color-blue-200);
+                        color: var(--color-white-100);
+                        transform: scale(0.9);
+                    }
+                    .card-btn-two{
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 150%;
+                        letter-spacing: 0.15em;
+                        text-transform: uppercase;
+                        color: var(--color-white-100);
+                        background: var(--color-blue-200);
+                        box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+                        border-radius: 100px;
+                        padding: 18px 22px;
+                        transition: .6s all;
+                    }
+                    .card-btn-two:hover{
+                        transform: scale(0.9);
+                    }
+                    a{
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 150%;
+                        color: var(--color-blue-200);
+                    }
+                }
+            }
+        }
+        .clean-card-first:hover{
+            margin-top: -20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .clean{
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 17px;
+        }
+    }
+}
