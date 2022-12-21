@@ -235,3 +235,48 @@
         }
     }
 }
+
+@media screen and (max-width: 950px){
+    .work{
+        .work-content{
+            .work-registration{
+                flex-direction: column;
+                justify-content: center;
+                padding: 0;
+                .content-registration{
+                    h2{
+                        text-align: center;
+                        max-width: 100%;
+                    }
+                    .work-btns{
+                        input{
+                            width: 100% !important;
+                        }
+                        button{
+                            width: 100% !important;
+                        }
+                    }
+                }
+                .img-regisstration{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px){
+    .work{
+        .work-content{
+            .work-registration{
+                padding: 30px;
+                .work-btns{
+                    flex-direction: column;
+                    button{
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
